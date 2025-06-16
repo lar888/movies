@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<div class="container">
+		<h1>Застосунок пошуку фільмів</h1>
+		<div class="search">
+			<div class="search__group search__group--input">
+				<label class="search__label-input" for="search">Пошук фільму</label>
+				<input class="search__input" id="search" type="text" placeholder="Почніть вводити назву фільму">
+			</div>
+
+			<div class="search__group search__group--checkbox">
+				<input class="search__checkbox" type="checkbox" id="checkbox">
+				<label class="search__label-checkbox" for="checkbox">Додавати фільми до вже існуючого списку</label>
+			</div>
+		</div>
+		<div class="movies" id="movies-list"></div>
+	</div>
+
+	<script src="index.js" type="module"></script>
+
+</body>
+
+</html>

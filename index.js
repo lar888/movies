@@ -49,7 +49,7 @@ const inputSearchHandler = (e) => {
 		const searchValue = e.target.value.trim()
 		if (!searchValue || searchValue.length < 4 || searchValue === lastSearchValue) return
 		if (!isSearchTriggerEnabled) clearMoviesMarkup()
-		getData(`http://www.omdbapi.com/?apikey=fda94612&s=${searchValue}`)
+		getData(`https://www.omdbapi.com/?apikey=fda94612&s=${searchValue}`)
 			.then((movies) => movies.forEach(addMovieToList))
 
 		lastSearchValue = searchValue
